@@ -1,0 +1,7 @@
+th:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+a + span {
+    font-weight: normal;
+}

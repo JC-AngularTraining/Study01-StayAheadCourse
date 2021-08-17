@@ -1,0 +1,39 @@
+{
+  "bookings": [
+    {
+      "startDate": "2019-10-17",
+      "endDate": "2019-10-24",
+      "customer": "Dave",
+      "coop": "Coop 1",
+      "id": 1
+    },
+    {
+      "startDate": "2019-10-18",
+      "endDate": "2019-10-25",
+      "customer": "Stuart",
+      "coop": "Coop 2",
+      "id": 2
+    },
+    {
+      "startDate": "2019-10-19",
+      "endDate": "2019-10-26",
+      "customer": "Greg",
+      "coop": "Coop 3",
+      "id": 3
+    },
+    {
+      "startDate": "2019-10-20",
+      "endDate": "2019-10-27",
+      "customer": "Susie",
+      "coop": "Coop 4",
+      "id": 4
+    },
+    {
+      "startDate": "2019-10-21",
+      "endDate": "2019-10-28",
+      "customer": "James",
+      "coop": "Coop 5",
+      "id": 5
+    }
+  ]
+}

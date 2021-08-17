@@ -1,0 +1,30 @@
+<table class="table">
+    <tr>
+        <th>
+            <a (click)="sortBy('startDate')">Start date</a>&nbsp;
+            <span *ngIf="sortProp == 'startDate' && sortOrder == 'asc'">^</span>
+            <span *ngIf="sortProp == 'startDate' && sortOrder == 'desc'">v</span>
+        </th>
+        <th>
+            <a (click)="sortBy('endDate')">End date</a>&nbsp;
+            <span *ngIf="sortProp == 'endDate' && sortOrder == 'asc'">^</span>
+            <span *ngIf="sortProp == 'endDate' && sortOrder == 'desc'">v</span>
+        </th>
+        <th>
+            <a (click)="sortBy('customer')">Customer</a>&nbsp;
+            <span *ngIf="sortProp == 'customer' && sortOrder == 'asc'">^</span>
+            <span *ngIf="sortProp == 'customer' && sortOrder == 'desc'">v</span>
+        </th>
+        <th>
+            <a (click)="sortBy('coop')">Coop</a>&nbsp;
+            <span *ngIf="sortProp == 'coop' && sortOrder == 'asc'">^</span>
+            <span *ngIf="sortProp == 'coop' && sortOrder == 'desc'">v</span>
+        </th>
+    </tr>
+    <tr *ngFor="let booking of bookings">
+        <td>{{ booking.startDate.toLocaleDateString("en-GB") }}</td>
+        <td>{{ booking.endDate.toLocaleDateString("en-GB") }}</td>
+        <td>{{ booking.customer }}</td>
+        <td>{{ booking.coop }}</td>
+    </tr>
+</table>

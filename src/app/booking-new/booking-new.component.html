@@ -1,0 +1,39 @@
+<form [formGroup]="formGroup" (ngSubmit)="onSubmit()" class="mt-2"> 
+    <div class="form-group">
+        <label>Start date *</label>
+        <input 
+            type="date" 
+            name="startDate" 
+            formControlName="startDate"
+            class="form-control" />
+        <span *ngIf="formGroup.controls.startDate?.invalid && formGroup.controls.startDate?.touched">The start date is required</span>
+    </div>
+    <div class="form-group">
+        <label>End date *</label>
+        <input 
+            type="date" 
+            name="endDate" 
+            formControlName="endDate"
+            class="form-control" />
+        <span *ngIf="formGroup.controls.endDate?.invalid && formGroup.controls.endDate?.touched">The end date is required</span>
+    </div>
+    <div class="form-group">
+        <label>Customer *</label>
+        <input 
+            type="text" 
+            name="customer" 
+            formControlName="customer"
+            class="form-control" />
+        <span *ngIf="formGroup.controls.customer?.invalid && formGroup.controls.customer?.touched">The customer is required</span>
+    </div>
+    <div class="form-group">
+        <label>Coop *</label>
+        <input 
+            type="text" 
+            name="coop" 
+            formControlName="coop"
+            class="form-control" />
+        <span *ngIf="formGroup.controls.coop?.invalid && formGroup.controls.coop?.touched">The coop is required</span>
+    </div>
+    <input type="submit" />
+</form>
